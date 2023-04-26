@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Source Code Pro', monospace;
+    text-decoration: none;
+    background-image: url(../img/workspace-1280538_1280.jpg);
+    background-repeat: repeat;    
+    background-size: contain;
+    height: 150vh;
+}
