@@ -3,16 +3,17 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 15%;
     background-repeat:no-repeat;
     border-radius: 10px;
     align-items: self-start;
+
 }
-.subtitulo-quienes-somos{
+.subtitulo{
     color: beige;
     margin-bottom: 10px;
     font-style: italic;
-    font-size: 22px;
+    font-size: 26px;
 }
 .contenedor-quienes-somos{
     width: 70%;
@@ -23,8 +24,59 @@
     color: beige;
     font-style: italic;
 }
+
 .vision{
     width: 250px;
     height: 150px;
     margin-left: 10%;
 }
+
+.carrusel { 
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+  .carrusel-contenedor {
+    display: flex;
+    width: calc(100% * 6);
+    animation: desplazamiento 15s infinite linear;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+  
+  .imagen-carrusel{
+    width: 310px;
+    height: 170px;
+    margin: 0 10px 0 10px;
+
+  }
+  
+  @keyframes desplazamiento {
+    0% {
+      transform: translateX(0%);
+    }
+    16.66% {
+      transform: translateX(-10%);
+    }
+    33.33% {
+      transform: translateX(-30%);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    66.66% {
+      transform: translateX(-70%);
+    }
+    83.33% {
+      transform: translateX(-120%);
+    }
+    100% {
+      transform: translateX(-150%);
+    }
+  }
+  

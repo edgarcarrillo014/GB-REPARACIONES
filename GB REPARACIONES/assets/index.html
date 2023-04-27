@@ -15,8 +15,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+<script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
 </head>
 <header>
+    <!--AQUI COMIEZA EL NAVBAR DE NAVEGACION -->
+    <!--AQUI COMIEZA EL NAVBAR DE NAVEGACION -->
+    <!--AQUI COMIEZA EL NAVBAR DE NAVEGACION -->
     <nav class="barra-de-navegacion">
         <dir>
             <img class="logo" src="../img/GBC.png" alt="logo de la empresa">
@@ -32,8 +41,31 @@
     <div class="linea"></div>   
 </header>
 <body>
+    <div class="texto-animado">
+        <h1>  ¡Bienvenido a GB REPARACIONES!</h1>
+        <p>En este sitio Web encotrarás las mejores promociones y los mejores trabajos de calidad. ¿Y tú que esperas para cotizar</p>
+      </div>
+      <button class="scroll-button">Ver mas</button>
+
+<!--CARRUSEL DE IMAGENES -->
+<!--CARRUSEL DE IMAGENES -->
+<!--CARRUSEL DE IMAGENES -->
+<div class="carrusel">
+    <div class="carrusel-contenedor">
+        <img class="imagen-carrusel" src="../img/diagnostico de pc.png" alt="Imagen 1">
+        <img class="imagen-carrusel" src="../img/reparaciones.png" alt="Imagen 2">
+        <img class="imagen-carrusel" src="../img/discoKington.png" alt="Imagen 3">
+        <img class="imagen-carrusel" src="../img/tecnico.png" alt="Imagen 1">
+        <img class="imagen-carrusel" src="../img/notebook.png" alt="Imagen 2">
+        <img class="imagen-carrusel" src="../img/10th-Gen-Intel-Core-Processor-Family.png" alt="Imagen 3">
+    </div>
+  </div>
+
+  <!--SECCION QUIENES SOMOS  -->
+  <!--SECCION QUIENES SOMOS  -->
+  <!--SECCION QUIENES SOMOS  -->
         <section id="quienes-somos" class="seccion-quienes-somos">
-            <h3 class="subtitulo-quienes-somos">¿Quienes somos?</h3>
+            <h3 class="subtitulo">¿Quienes somos?</h3>
             <div class="contenedor-quienes-somos">
                 <p class="texto-quienes-somos">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum autem facilis earum, ut quaerat iste libero aspernatur consequatur sint, architecto nulla dolorem? Ducimus, magni mollitia? Necessitatibus quas dolor aliquam!
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia tempora deleniti fugiat rem incidunt, dicta aliquam soluta aliquid corporis officia enim corrupti fugit, optio veniam commodi, provident obcaecati! Blanditiis? 
@@ -44,11 +76,13 @@
                 </div>
             </div>
         </section>
-        
+        <!--SECCION SERVICIOS -->
+        <!--SECCION SERVICIOS -->
+        <!--SECCION SERVICIOS -->
         <section id="servicios" class="seccion-servicios">
             <img class="pc" src="../img/reparaciones.png" alt="">
           <div class="contenedor-servicios">
-                <h3 class="subtitulo_servicios">¿En que nos especializamos?</h3>
+                <h3 class="subtitulo">¿En que nos especializamos?</h3>
                 <p class="texto-servicios">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, assumenda laboriosam. Sint ab quidem, officia autem nihil velit qui omnis, nulla beatae fugiat eius quaerat expedita earum consequuntur, impedit aliquid.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est, dolorem tenetur sed magni nostrum! Nostrum explicabo error odit consequuntur porro officiis sint adipisci temporibus. Soluta nobis aspernatur provident harum.
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores aliquid reprehenderit repellendus praesentium animi repellat? Natus suscipit molestiae perferendis, doloribus atque, maiores nulla iure odio velit est voluptatibus aliquam eos.
@@ -56,7 +90,9 @@
            </div> 
         </section>
 
-
+        <!--SECCION DE CONTACTO -->
+        <!--SECCION DE CONTACTO -->
+        <!--SECCION DE CONTACTO -->
         <div class="contenedor-texto-contacto">
             <div id="ubicacion" class="seccion-ubicacion">
                 <div class="contenedor-ubicacion">
@@ -65,13 +101,31 @@
                 <h3 class="puedes-contactarnos"><a href=".pie-de-pagina"><a><strong>Dirección:  </strong>28985, Av Pablo Silva García #253, Villa de Oro, 28987 Villa de Álvarez, Col.</h3></a>
             </div>
 
+            <!--FOOTER -->
+            <!--FOOTER -->
+            <!--FOOTER -->
+            
             <footer class="pie-de-pagina" id="pie-de-pagina">
                 <p>Puedes cotizar aquí</p>
                 <a id="WhatsApp" href="https://api.whatsapp.com/send?phone=3121455508&text=Hola, Nececito mas informacion!">Envíanos un mensaje de WhatsApp</a><img class="iconos" src="../img/WhatsApp.svg.png" alt="Icono WhatsApp">
                 <p>Siguenos en Facebook</p>
                 <a href=""><img class="iconos" src="../img/Facebook_icon.svg.png" alt="Icono Facebook_icon"></a>
         </footer>
+        <script src="../js/index.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.carrusel-contenedor').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 1000, // Velocidad de transición de las imágenes
+                centerMode: true, // Activa el modo centrado
+                variableWidth: true // Añade esta opción para que las imágenes tengan diferentes anchuras
+              });
+            });
+          </script>
+          
 </body>
-
-
 </html>

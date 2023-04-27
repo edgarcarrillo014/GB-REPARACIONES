@@ -28,7 +28,7 @@
 .linea {
     border-top: 1px solid beige;
     height: 2px;
-    width: 90%;
+    width: 100%;
     padding: 0;
     margin: 15px auto 0 auto;
   }
@@ -40,3 +40,65 @@
     transition-timing-function: initial 2s;
 }
 
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  .scroll-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .scroll-button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+.texto-animado{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.texto-animado h1{
+    color: #FFEDE6;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+}
+.texto-animado p{
+    color: #E8D4D1;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+  .texto-animado h1,
+.texto-animado p {
+  opacity: 0;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  text-align: center;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
