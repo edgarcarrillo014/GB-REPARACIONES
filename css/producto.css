@@ -1,0 +1,79 @@
+.carrusel { 
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+  .carrusel-contenedor {
+    display: flex;
+    width: calc(100% * 6);
+    animation: desplazamiento 8s infinite alternate;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+  
+  .imagen-carrusel{
+    width: 310px;
+    height: 170px;
+    margin: 0 10px 0 10px;
+
+  }
+  
+  @keyframes desplazamiento {
+    0% {
+      transform: translateX(0%);
+    }
+    16.66% {
+      transform: translateX(-10%);
+    }
+    33.33% {
+      transform: translateX(-30%);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    66.66% {
+      transform: translateX(-70%);
+    }
+    83.33% {
+      transform: translateX(-120%);
+    }
+    100% {
+      transform: translateX(-150%);
+    }
+  }
+
+  .contenedor-productos{
+    display: flex;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color:transparent;
+  }
+  .item-contenedor{
+      display: flex;
+      width: 180px;
+      height: 200px;
+      border: 3px solid black;
+      margin: 10px 10px 0  0;
+      justify-content: center;
+      align-items: center;
+      opacity: transparent;
+
+  }
+  .item-contenedor:hover{
+      transition: ease 2s;
+      color: aliceblue;
+  }
+  
+
+
+  

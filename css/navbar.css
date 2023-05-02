@@ -1,0 +1,124 @@
+.barra-de-navegacion{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.barra-de-navegacion .logo{
+    width: 250px;
+    margin-top: 10px;
+    background-image: url(../img/logo-transparente.jpg);
+}
+
+.contenedor-navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;    
+    font-weight: 700;
+    font-size: 16px;
+    list-style: none;
+    font-style: italic;
+
+}
+.contenedor-navbar a{
+    text-decoration: none ;
+    color: beige;
+
+}
+
+.item-navbar{
+  text-shadow: 10px 5px 5px black;
+
+}
+.item-navbar:hover{
+    cursor: pointer;
+    transition: ease 1s;
+    color: grey; 
+    font-size: 18px;
+}
+
+.texto-animado{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10%;
+    text-shadow: 15px 15px 15px black;
+    height: auto;
+    margin-bottom: 35%;
+}
+
+.texto-animado h1{
+    color: #FFEDE6;
+    font-weight: 700;
+    font-size: 56px;
+    font-family: monospace;
+}
+.texto-animado p{
+    color: #E8D4D1;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+  .texto-animado h1,
+.texto-animado p {
+  font-style: italic;
+  opacity: 0;
+  animation-name: aparecer;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  text-align: center;
+  text-indent: 5px;
+}
+
+.text-container {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.text {
+  display: none;
+  
+}
+
+.text h2{
+  font-size: 56px;
+  text-align: center;
+  font-weight: 700;
+  font-family: monospace;    
+  font-style: italic;
+  color: #FFEDE6;
+}
+.text p{
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  color: #E8D4D1;
+}
+
+.text.active {
+  display: block;
+}
+
+
+
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

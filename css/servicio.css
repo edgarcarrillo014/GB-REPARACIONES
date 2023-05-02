@@ -1,0 +1,45 @@
+
+.seccion-servicios{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: beige;
+    flex-direction: column;
+    position: relative;
+    height: 100px; /* ajusta la altura del slider aquí */
+    overflow: hidden;
+}
+.contenedor-servicios{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    font-style: italic;
+    justify-content: flex-end;
+}
+.contenedor-servicios h3{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+  .seccion-quienes-somos{
+      display: flex;
+      width: 100%;
+      margin-top: 20%;
+      justify-content: center;
+      align-items: center;
+      overflow:hidden; 
+      position: relative; 
+      height: auto; 
+  
+  }
+
+  .subtitulo{
+      color: #FFEDE6;
+      margin-bottom: 10px;
+      font-style: italic;
+      font-size: 36px;
+      text-align: center;
+  }
+
+  
